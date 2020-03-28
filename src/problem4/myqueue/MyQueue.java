@@ -54,4 +54,55 @@ public class MyQueue {
     public void setTmp(Node tmp) {
         this.tmp = tmp;
     }
+    public void queuePrint(MyQueue queue) {
+        while (queue.tmp != null) {
+
+            System.out.print(queue.tmp.getNode().getData() + ",");
+            queue.tmp = queue.tmp.getNext();
+        }
+        System.out.println("\b");
+        queue.tmp = queue.front;
+    }
+
+
+    public void enqueue(Node node) {
+
+        if (front == null) {
+            tmp = front = end = node;
+        } else {
+            while (tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+            end = node;
+            tmp.setNext(node);
+            tmp = front;
+        }
+    }
+
+    //preorder
+    public void preOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+
+        enqueue(new Node(node));
+        preOrder(node.getLeft());
+        preOrder(node.getRight());
+    }
+
+    public void printSuccessor(int data) {
+
+        tmp = front;
+        while (tmp.getNode().getData() != data && tmp != null) {
+            tmp = tmp.getNext();
+        }
+        try {
+            assert tmp != null;
+            System.out.println(tmp.getNext().getNode().getData());
+        } catch (NullPointerException ignore) {
+            System.out.println("No preorder Successor found");
+        }
+
+    }
+
 }
