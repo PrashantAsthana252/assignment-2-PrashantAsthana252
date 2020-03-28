@@ -30,3 +30,7 @@ public class MyBinarySearchTree {
             inorderRec(root.getRight());
         }
     }
+    public void countNodeWithOutLeftChild(TreeNode root) {
+
+        if (root == null)
+            return;
