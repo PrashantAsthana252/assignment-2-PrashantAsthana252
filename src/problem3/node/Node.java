@@ -10,4 +10,11 @@ public class Node {
     private int data;
     private Node next;
     private int priority;
+
+    public Node(int data, int priority) {
+        this.data = data;
+        this.next = null;
+        this.priority = priority;
+    }
+
 }
