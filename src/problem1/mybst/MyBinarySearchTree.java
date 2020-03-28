@@ -5,6 +5,11 @@
  *  Time: 7:17 PM
  */
 package problem1.mybst;
-// to implement BinarySearchTree
+
 public class MyBinarySearchTree {
-}
+ static Queue<TreeNode> q;
+
+
+    public TreeNode insert(TreeNode root, int x) {
+    }
+    }
