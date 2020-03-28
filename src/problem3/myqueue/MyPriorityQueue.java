@@ -11,4 +11,13 @@ public class MyPriorityQueue {
     private Node front;
     private Node rear;
 
+    public MyPriorityQueue() {
+        this.front = null;
+        this.rear = null;
+    }
+
+    public boolean isEmpty() {
+        return front == null;
+    }
+
 }
