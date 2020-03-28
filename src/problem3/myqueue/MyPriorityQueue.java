@@ -7,4 +7,6 @@
 package problem3.myqueue;
 
 public class MyPriorityQueue {
+    public void insert(int i, int i1) {
+    }
 }
