@@ -45,3 +45,15 @@ public class MyBinarySearchTree {
             if (temp == null) {
                 break;
             }
+            if (temp.getLeft() == null)
+                count++;
+
+
+            if (temp.getLeft() != null)
+                queue.add(temp.getLeft());
+
+            if (temp.getRight() != null)
+                queue.add(temp.getRight());
+        }
+        System.out.println("count of Nodes without left child: " + count);
+    }
