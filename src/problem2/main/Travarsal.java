@@ -1,4 +1,6 @@
 package problem2.main;
+import problem1.node.TreeNode;
+
 
 public class Travarsal {
     void printPostorder(TreeNode node) {
