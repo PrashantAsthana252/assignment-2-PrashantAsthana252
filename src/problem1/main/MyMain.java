@@ -5,7 +5,7 @@
  *  Time: 7:17 PM
  */
 package problem1.main;
-// executable class
 
-public class MyMain {
+
+public abstract class MyMain {
 }
